@@ -1,0 +1,58 @@
+.Pagination {
+  width: 95%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.ItemsPerPage {
+  margin-right: 20px;
+}
+
+.ItemsPerPage select {
+  padding: 8px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ItemsPerPage select:focus {
+  outline: none;
+  border-color: #3766e8;
+}
+
+.PaginationControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.PaginationControls button {
+  background-color: #3766e8;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.PaginationControls button:hover {
+  background-color: #0056b3;
+}
+
+.PaginationControls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.PaginationControls span {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}

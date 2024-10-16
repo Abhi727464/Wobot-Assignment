@@ -1,0 +1,56 @@
+.filterContainer {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+}
+
+.filterContainer select {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: white;
+  width: 250px;
+}
+
+.filterContainer select {
+  appearance: none;
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #333;
+  outline: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.filterContainer select:hover {
+  border-color: #888;
+}
+
+.filterContainer select:focus {
+  border-color: #3766e8;
+  box-shadow: 0 0 8px rgba(118, 184, 255, 0.5);
+}
+
+.filterContainer option {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+.filterContainer select::-ms-expand {
+  display: none;
+}
+
+/* Optional - style for the arrow */
+.filterContainer select {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns%3D%27http%3A//www.w3.org/2000/svg%27 width%3D%2710%27 height%3D%275%27 viewBox%3D%270 0 10 5%27%3E%3Cpath fill%3D%27%23333%27 d%3D%27M0 0l5 5 5-5z%27/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 10px 5px;
+}

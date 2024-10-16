@@ -1,0 +1,77 @@
+.CameraDataContainer {
+}
+tr {
+  border-bottom: 2px solid black;
+  height: 50px;
+}
+td {
+  padding-left: 5px;
+  text-align: center;
+}
+td:first-child {
+  padding-left: 20px;
+}
+.healthBox {
+  display: flex;
+  align-items: center;
+}
+
+.healthDeviceValue {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid #ff7e17;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.healthCloudValue {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 3px solid #029262;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+
+.active {
+  background: #e6f4ef;
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #029262;
+  font-weight: 500;
+}
+.inActive {
+  background: #f0f0f0;
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #545454;
+  font-weight: 500;
+}
+.activateBtn {
+  background-color: #ebf0ff;
+  width: 100px;
+  padding: 6px;
+  border-radius: 5px;
+  color: #3766e8;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.deleteBtn {
+  background-color: #ffe2e5;
+
+  padding: 6px;
+  border-radius: 5px;
+  color: #dc3545;
+  font-weight: bold;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
