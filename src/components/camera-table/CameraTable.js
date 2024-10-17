@@ -47,7 +47,7 @@ const CameraTable = () => {
     }
     if (searchTerm) {
       filtered = filtered.filter((camera) =>
-        camera.name.toLowerCase().includes(searchTerm.toLowerCase())
+        camera.name.toLowerCase().includes(searchTerm.trim().toLowerCase())
       );
     }
     setFilteredCameras(filtered);
@@ -85,6 +85,15 @@ const CameraTable = () => {
       setSelectedCameras(allCameraIds);
     } else {
       setSelectedCameras([]);
+    }
+  };
+
+  // Handle individual row checkbox change
+  const handleRowSelect = (id) => {
+    if (selectedCameras.includes(id)) {
+      setSelectedCameras(selectedCameras.filter((cameraId) => cameraId !== id));
+    } else {
+      setSelectedCameras([...selectedCameras, id]);
     }
   };
   return (
@@ -135,6 +144,7 @@ const CameraTable = () => {
                   onStatusUpdate={handleStatusUpdate}
                   onDelete={handleDelete}
                   isSelected={selectedCameras.includes(camera.id)}
+                  onRowSelect={() => handleRowSelect(camera.id)}
                 />
               ))
             )}

@@ -6,7 +6,13 @@ import { TbDeviceRemote } from "react-icons/tb";
 import { PiWarningCircleBold } from "react-icons/pi";
 import styles from "./cameraRow.module.css";
 
-const CameraRow = ({ camera, onStatusUpdate, onDelete, isSelected }) => {
+const CameraRow = ({
+  camera,
+  onStatusUpdate,
+  onDelete,
+  isSelected,
+  onRowSelect,
+}) => {
   const toggleStatus = () => {
     const newStatus = camera.status === "Active" ? "Inactive" : "Active";
     onStatusUpdate(camera.id, newStatus);
@@ -20,6 +26,7 @@ const CameraRow = ({ camera, onStatusUpdate, onDelete, isSelected }) => {
             type="checkbox"
             style={{ marginRight: "5px" }}
             checked={isSelected}
+            onChange={onRowSelect}
           />
           <GoDotFill
             style={{

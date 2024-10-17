@@ -10,7 +10,7 @@ const CameraHeader = ({ searchTerm, setSearchTerm }) => {
       </div>
       <div className={styles.headerContainer}>
         <div>
-          <h1>Cameras</h1>
+          <h1 style={{ margin: 0 }}>Cameras</h1>
           <p>Manage Your Cameras here</p>
         </div>
 
