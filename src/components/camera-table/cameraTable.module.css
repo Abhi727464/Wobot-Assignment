@@ -8,7 +8,6 @@
   max-height: 55vh;
   overflow-y: scroll;
   margin: 20px auto;
-  /* padding: 10px; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 5px;
   text-align: center;
@@ -18,13 +17,15 @@
 .tableContainer table {
   width: 100%;
   height: auto;
+  border-collapse: collapse;
 }
 .tableHeader {
   text-align: center;
   height: 60px;
   position: sticky;
-  top: 0;
-  background: white;
+  top: 0px;
+  background: #e1e1e1;
+
   z-index: 2;
 }
 .tableHeader th {
@@ -35,7 +36,6 @@
   text-align: left;
 }
 tr {
-  /* box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px; */
   height: 60px;
   text-align: center;
 }

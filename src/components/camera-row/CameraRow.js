@@ -4,10 +4,9 @@ import { GoDotFill } from "react-icons/go";
 import { AiOutlineCloud } from "react-icons/ai";
 import { TbDeviceRemote } from "react-icons/tb";
 import { PiWarningCircleBold } from "react-icons/pi";
-
 import styles from "./cameraRow.module.css";
 
-const CameraRow = ({ camera, onStatusUpdate, onDelete }) => {
+const CameraRow = ({ camera, onStatusUpdate, onDelete, isSelected }) => {
   const toggleStatus = () => {
     const newStatus = camera.status === "Active" ? "Inactive" : "Active";
     onStatusUpdate(camera.id, newStatus);
@@ -17,7 +16,11 @@ const CameraRow = ({ camera, onStatusUpdate, onDelete }) => {
     <tr key={camera.id}>
       <td>
         <div style={{ display: "flex", alignItems: "center" }}>
-          <input type="checkbox" style={{ marginRight: "5px" }} />
+          <input
+            type="checkbox"
+            style={{ marginRight: "5px" }}
+            checked={isSelected}
+          />
           <GoDotFill
             style={{
               color: camera.current_status === "Online" ? "#029262" : "#DC3545",

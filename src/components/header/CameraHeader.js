@@ -17,7 +17,7 @@ const CameraHeader = ({ searchTerm, setSearchTerm }) => {
         <div className={styles.inputContainer}>
           <input
             type="text"
-            placeholder="Search cameras..."
+            placeholder="Search camera name..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className={styles.inputBox}
