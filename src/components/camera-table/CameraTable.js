@@ -113,7 +113,7 @@ const CameraTable = () => {
               <th style={{ textAlign: "left", paddingLeft: "20px" }}>
                 <input
                   type="checkbox"
-                  style={{ marginRight: "10px" }}
+                  style={{ marginRight: "10px", cursor: "pointer" }}
                   onChange={handleSelectAll}
                   checked={selectAll}
                 />

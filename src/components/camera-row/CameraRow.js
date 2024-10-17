@@ -24,7 +24,7 @@ const CameraRow = ({
         <div style={{ display: "flex", alignItems: "center" }}>
           <input
             type="checkbox"
-            style={{ marginRight: "5px" }}
+            style={{ marginRight: "5px", cursor: "pointer" }}
             checked={isSelected}
             onChange={onRowSelect}
           />
