@@ -13,7 +13,7 @@ const CameraRow = ({ camera, onStatusUpdate, onDelete, isSelected }) => {
   };
 
   return (
-    <tr key={camera.id}>
+    <tr key={camera.id} className={styles.tableRow}>
       <td>
         <div style={{ display: "flex", alignItems: "center" }}>
           <input

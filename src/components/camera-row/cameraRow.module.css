@@ -1,5 +1,11 @@
-tr {
+.tableRow {
   height: 50px;
+  border-bottom: 1px solid rgb(236, 236, 236);
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transition */
+}
+
+.tableRow:hover {
+  background-color: #f0f0f0; /* Slightly darker hover effect */
 }
 td {
   padding-left: 5px;
@@ -7,6 +13,9 @@ td {
 }
 td:first-child {
   padding-left: 20px;
+}
+td:last-child {
+  border: none;
 }
 .healthBox {
   display: flex;
