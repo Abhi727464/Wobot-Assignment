@@ -49,14 +49,16 @@ td:last-child {
   border-radius: 5px;
   color: #029262;
   font-weight: 500;
+  margin: 0px auto;
 }
 .inActive {
-  background: #f0f0f0;
+  background: #eaeaea;
   width: 100px;
   padding: 5px;
   border-radius: 5px;
   color: #545454;
   font-weight: 500;
+  margin: 0px auto;
 }
 .activateBtn {
   background-color: #ebf0ff;

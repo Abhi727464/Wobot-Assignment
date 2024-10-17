@@ -56,12 +56,7 @@ const CameraRow = ({ camera, onStatusUpdate, onDelete, isSelected }) => {
       <td>{camera?.location}</td>
       <td>{camera?.recorder ? camera?.recorder : "N/A"}</td>
       <td>{camera?.tasks ? `${camera?.tasks} Tasks` : "N/A"}</td>
-      <td
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
+      <td>
         <div
           className={
             camera?.status === "Active" ? styles.active : styles?.inActive
