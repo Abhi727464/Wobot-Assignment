@@ -1,6 +1,6 @@
 .Pagination {
   width: 95%;
-  margin: 0px auto;
+  margin: 10px auto;
   display: flex;
   justify-content: flex-end;
   gap: 20px;

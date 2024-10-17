@@ -50,6 +50,9 @@ td:last-child {
   color: #029262;
   font-weight: 500;
   margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .inActive {
   background: #eaeaea;
@@ -59,6 +62,9 @@ td:last-child {
   color: #545454;
   font-weight: 500;
   margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .activateBtn {
   background-color: #ebf0ff;
