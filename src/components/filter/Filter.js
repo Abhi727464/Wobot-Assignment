@@ -10,7 +10,7 @@ const Filter = ({
   return (
     <div className={styles.filterContainer}>
       <div>
-        <div className="filter-container">
+        <div>
           <select
             value={locationFilter}
             onChange={(e) => setLocationFilter(e.target.value)}
